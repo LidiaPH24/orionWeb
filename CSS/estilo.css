@@ -81,6 +81,8 @@ body {
     /* height: 100vh; */
 }
 
+/* la Barra De Navegacion */
+
 .Barra_De_Navegacion {
     margin-top: 0;
     font-size: 12px;
@@ -106,6 +108,7 @@ body {
 }
 
 #amburgesa {
+    z-index: 2;
     margin-top: 25%;
     width: 50%;
 
@@ -125,6 +128,58 @@ body {
     transition: all .3s ease-in-out;
     margin: 2px;
 }
+
+#btnMenu {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+#btnMenu:hover {
+    transform: scale(1.05);
+}
+
+#btnMenu span {
+    font-size: 1.6rem;
+    position: relative;
+    top: -2px;
+}
+
+#menu {
+    min-height: 3rem;
+}
+
+.menuDesplegado {
+    background-color: #0E1E40;
+    box-shadow: 2px 1px 15px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    width: 40vw;
+    height: 45vh;
+    z-index: -1;
+
+    position: absolute;
+    left: 300px;
+    right: 0;
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    top: -25px;
+
+    padding: .5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+
+    animation-name: abreCaja;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    transform-origin: top;
+}
+
+
+/* zona de idimoa botom barra de navegacion */
 
 #idioma {
     display: flex;
@@ -243,6 +298,10 @@ main {
     font-weight: bold;
 }
 
+.busqueda button:hover {
+    color: #FFC05A;
+}
+
 /* Textos de cada apartado */
 .gestor {
     display: grid;
@@ -265,17 +324,23 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-right: 0;
 
     padding-left: 8%;
     padding-right: 8%;
-    justify-items: center;
+    justify-content: center;
+     justify-items: center;
+    
 }
 
+
 .card {
+    margin-right: 0;
     position: relative;
     height: 280px;
     width: 200px;
-    overflow: hidden;
+    
+/* overflow: hidden; */
 }
 
 .card img {
@@ -288,13 +353,9 @@ main {
 
 .card .contenido {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
 }
 
 .card h3 {
@@ -323,12 +384,14 @@ main {
 
 /* ajustes de los botones */
 .boton-normal {
-    width: 25%;
-    height: 100%;
+    width: 100px;
+    height: 25px;
     padding: 5px;
+    border-radius: 20px;
+
     background-color: #2b395e;
     color: #ffffff;
-    border-radius: 20px;
+
     grid-column: 1/3;
     text-align: center;
     cursor: pointer;
@@ -396,12 +459,12 @@ main {
 /* boton de subir arriba otra vez */
 
 #subir {
-    width: 10%;
-    height: 20%;
+    width: 40px;
+    justify-self: center;
     background-color: #2b395e;
     grid-column: 1/3;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 20%;
     font-size: 30px;
 }
 
@@ -480,7 +543,7 @@ hr {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 920px) {
 
     /* tipografias formato ordenador */
     h1 {
@@ -497,9 +560,11 @@ hr {
 
 }
 
+@media screen and (min-width: 920px) {
 
-
-@media screen and (min-width: 800px) {
+    #btnMenu {
+        display: none;
+    }
 
     .movil-cards {
         display: none;
@@ -537,12 +602,8 @@ hr {
     }
 
 
-    main {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
     #cabecera {
-        grid-column: 1 / 5;
+        grid-column: 1/5;
     }
 
     .por-encima {
@@ -571,6 +632,7 @@ hr {
 
     .boton-normal {
         grid-column: 1/5;
+        height: auto;
     }
 
     .gestor {
@@ -581,12 +643,16 @@ hr {
         grid-column: 1/5;
     }
 
-    .cards {
-        grid-column: 1/5;
-        grid-template-columns: repeat (auto-fit, 1fr 1fr 1fr 1fr);
-        gap: 100px;
+    main {
+        grid-template-columns: repeat(4, 1fr);
     }
 
+    .cards {
+        grid-column: 1/5;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+         justify-items: center;
+    }
 
     #cartas-de-texto {
         grid-column: 1/5;
@@ -599,49 +665,41 @@ hr {
         margin: 0;
     }
 
-
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 920px) {
 
     .fornulario-bloj {
         grid-column: 1/5;
     }
 
     .rellenar_formulario {
-        display: flex;
-         flex-wrap: wrap;
-         width: 1100px;
+            display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
     }
-
 
     .fornulario-bloj label,
     .fornulario-bloj input {
         margin-right: 30px;
         font-size: 18px;
-
     }
 
     .fornulario-bloj button {
         margin-top: 0;
     }
 
-    .boton-normal {
-    width: 12%;
-    padding: 8px;
-    grid-column: 1/5;
-    }
-
-    #subir{ 
-    margin-top: 0;
-      height: 90%;
-        width: 5%;
-    grid-column: 1/5;
-
+    #subir {
+        margin-top: 0;
+        height: 90%;
+       width: 60px;
+        grid-column: 1/5;
+       justify-self: center;
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 920px) {
     #desplegable {
         display: none;
     }
@@ -688,7 +746,7 @@ hr {
     }
 
     #enlace-redes {
-        margin-right: 1%;
+        margin-right: 3%;
     }
 
     #enlace-redes img {
