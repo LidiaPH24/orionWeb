@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="JS/menu.js" defer=""></script>
+    <script src="JS/ingles.js" defer=""></script>
+    <script src="JS/carusel-viajes.js" defer=""></script>
+    <!-- <script src="JS/carrusel.js" defer=""></script> -->
+
+
+    <link rel="stylesheet" href="CSS/estilos_fijos.css">
+    <!-- <link rel="stylesheet" href="CSS/viajes.css"> -->
+    <link rel="stylesheet" href="CSS/viajes_fijos.css">
+
+    <title>Viajes</title>
+</head>
+
+<body>
+
+    <nav class="Barra_De_Navegacion">
+        <img src="Img/logo_blanco.png" alt="">
+        <section id="desplegable">
+            <buton id="btnMenu">
+                <span>
+                    <img id="amburgesa" src="Img/icono_menu-50.png" alt="">
+                </span>
+            </buton>
+        </section>
+
+        <ul class="menuDesktop">
+            <li>
+                <a href="http:">Inicio</a>
+            </li>
+            <li>
+                <a href="http:">Quienes somos</a>
+            </li>
+            <li>
+                <a href="http:">Información</a>
+            </li>
+
+            <li>
+                <a href="http:">Viajes</a>
+            </li>
+            <li>
+                <a href="http:">Reservas</a>
+            </li>
+
+            <li>
+                <a href="http:">Contacto</a>
+            </li>
+            <li id="idioma">
+                <span id="iconoIng" class="cast">ESP</span>
+                <span id="iconoEsp" class="eng oculta">ING</span>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="carrusel">
+
+            <div class="slider">
+
+                <div class="slide activo">
+                    <img src="Img/foto_del carrusel_movil_piramide.png">
+                    <div class="contenido">
+                        <h2>LAS ESTRELLAS DE EGIPTO</h2>
+                        <a href="#" class="boton-carusel">Ver viaje</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Img/foto del carrusel_movil_aurora_boreal.png">
+                    <div class="contenido">
+                        <h2>Auroras boreales</h2>
+                        <a href="#" class="boton-carusel">Ver viaje</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Img/foto del carrusel_movil_astronauta.png">
+                    <div class="contenido">
+                        <h2>EL HUMANO EN EL ESPACIO</h2>
+                        <a href="#" class="boton-carusel">Ver viaje</a>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <img src="Img/foto_del carrusel_movil_luna.png">
+                    <div class="contenido">
+                        <h2>APRENDIENDO DE LA LUNA</h2>
+                        <a href="#" class="boton-carusel">Ver viaje</a>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="Img/foto_del carrusel_movil_planetario.png">
+                    <div class="contenido">
+                        <h2>Exploración espacial</h2>
+                        <a href="#" class="boton-carusel">Ver viaje</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- líneas decorativas -->
+            <div class="linea arriba"></div>
+            <div class="linea abajo"></div>
+
+            <!-- puntos -->
+            <div class="puntos">
+                <span class="punto activo"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+
+        </section>
+
+        <section id="titulo">
+            <h2>VIAJES</h2>
+            <hr>
+            <div>
+                <a id="elegido" href="">Todo</a>
+                <a href="">Miradores</a>
+                <a href="">Camping</a>
+                <a href="">Rupestre</a>
+                <a href="">Museos</a>
+            </div>
+        </section>
+
+        <section class="viajes">
+
+
+            <div class="grupo-viajes">
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-lunaroja-movil1.png">
+                    <div class="marco">
+                        <h4>TRANSILVANEA LUNA DE SANGRE</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-auroravoreal-movil3.png">
+                    <div class="marco">
+                        <h4>AHURORA BOREAL EN EL ARTICO</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-museoastronauta-movil9.png">
+                    <div class="marco">
+                        <h4>EL HUMANO EN EL ESPACIO</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-pramidedesierto-movil7.png">
+                    <div class="marco">
+                        <h4>LAS ESTRELLAS DE EGIPTO</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-playaluminiscentesanlorenzo-movil12.png">
+                    <div class="marco">
+                        <h4>LÁGRIMAS DE SAN LORENZO</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-lunallenablanca-movil10.png">
+                    <div class="marco">
+                        <h4>APRENDIENDO DE LA LUNA</h4>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Img/viajes-museoplanetario-movil8.png">
+                    <div class="marco">
+                        <h4>EXPLORACIONES ESPACIALES</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-museosanlorenzo-movil5.png">
+                    <div class="marco">
+                        <h4>MUSEO SAN LORENZO</h4>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Img/viajes-festivaldetanbata.jpg">
+                    <div class="marco">
+                        <h4>FESTIVAL DE TANABATA, JAPON</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="card">
+                    <img src="Img/viajes-galaxia-movil2.png">
+                    <div class="marco">
+                        <h4>LAS GALACHIAS</h4>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Img/viajes-telescopio-movil4.png">
+                    <div class="marco">
+                        <h4>OBSERVACION DE LA VIA LACTEA</h4>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <img src="Img/viajes-acampada-movil6.png">
+                    <div class="marco">
+                        <h4>ACAMPA Y DESCUBRE EL CIELO NOCTURNO</h4>
+                    </div>
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer class="menuDesktop">
+        <section id="bloke">
+            <section id="caja-de-contenido">
+                <section class="redes">
+                    <div id="enlace-redes">
+                        <img src="Img/redes-sociales-20.png" alt="">
+                        <img src="Img/redes-sociales-21.png" alt="">
+                        <img src="Img/redes-sociales-22.png" alt="">
+                        <img src="Img/redes-sociales-23.png" alt="">
+                    </div>
+                    <h4>Sigenos en nuestras redes sociales</h4>
+                </section>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum autem eos saepe corrupti,
+                    voluptatum earum aut minus pariatur explicabo est officiis mollitia quaerat animi in laudantium
+                    expedita fuga! Beatae, aliquid?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum autem eos saepe corrupti,
+                    voluptatum earum aut minus pariatur explicabo est officiis mollitia quaerat animi in laudantium
+                    expedita fuga! Beatae, aliquid?
+                </p>
+
+
+                <section class="politica">
+                    <a href="http:">Politica de reservas</a>
+                    <a href="http:">Politica de cookies</a>
+                    <a href="http:">Identidad corporativa</a>
+                    <a href="http:">Politica de privacidad</a>
+                </section>
+            </section>
+
+
+            <section class="marca">
+                <hr>
+                <img src="Img/favicon-blanco.png" alt="">
+            </section>
+
+            <section id="correo">
+                <p> @orionviajesastronomicos.com</p>
+            </section>
+        </section>
+
+    </footer>
+
+    <footer id="desplegable">
+
+        <section class="politica">
+            <a href="http:">Politica de reservas</a>
+            <a href="http:">Politica de cookies</a>
+            <a href="http:">Identidad corporativa</a>
+            <a href="http:">Politica de privacidad</a>
+        </section>
+
+        <hr>
+        <section class="marca">
+            <img src="Img/favicon-blanco.png" alt="">
+            <p> @orionviajesastronomicos.com</p>
+        </section>
+
+        <section class="redes">
+            <h4>Sigenos en nuestras redes sociales</h4>
+            <div id="enlace-redes">
+                <img src="Img/redes-sociales-20.png" alt="">
+                <img src="Img/redes-sociales-21.png" alt="">
+                <img src="Img/redes-sociales-22.png" alt="">
+                <img src="Img/redes-sociales-23.png" alt="">
+            </div>
+        </section>
+
+    </footer>
+
+
+</body>
+
+</html>

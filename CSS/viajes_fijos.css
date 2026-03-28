@@ -1,0 +1,279 @@
+.carrusel {
+    grid-column: 1/3;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.8;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.272);
+    z-index: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.activo {
+    opacity: 1;
+}
+
+/* contenido centrado */
+
+.contenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.boton-carusel {
+    width: 80px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* líneas */
+
+.linea {
+    position: absolute;
+    width: 1.5px;
+    height: 90px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arriba {
+    top: 20%;
+}
+
+.abajo {
+    bottom: 20%;
+}
+
+/* puntos */
+
+.puntos {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.punto {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.punto.activo {
+    opacity: 1;
+}
+
+
+#titulo {
+    grid-column: 1/3;
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+#titulo hr {
+    border-top: 1px solid #2b395e;
+    width: 80%;
+}
+
+
+#titulo h2 {
+    color: #2b395e;
+}
+
+#titulo a {
+    margin: 10px;
+    color: #2b395e;
+}
+
+#titulo a:hover {
+    color: #CC9B44;
+}
+
+#titulo a#elegido {
+    color: #CC9B44;
+}
+
+
+
+/* apartado viajes */
+
+.viajes {
+    grid-column: 1/3;
+    background: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.grupo-viajes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+/* card */
+
+.card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.272);
+    z-index: 0;
+}
+
+
+/* .card:hover{ 
+    background-color: rgba(255, 255, 255, 0.557);
+
+} */
+/* marco + texto */
+
+
+.marco {
+    position: absolute;
+    z-index: 1;
+    border: 1px solid #FFC05A;
+    border-radius: 20px;
+    inset: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.marco:hover {
+    inset: 15px;
+    cursor: pointer;
+}
+
+.marco h4 {
+    color: white;
+    width: 80%;
+}
+
+.marco h4:hover{  color: #FFC05A;}
+
+/* .overlay {
+    position: absolute;
+    inset: 10px;
+    border: 1px solid orange;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+} */
+
+
+
+footer {
+    margin-top: 10px;
+}
+
+@media (min-width:900px) {
+
+
+    .carrusel {
+        grid-column: 1/5;
+    }
+
+    .viajes {
+        grid-column: 1/5;
+        background: #eee;
+        padding: 20px 20px;
+        text-align: center;
+    }
+
+
+    #titulo {
+        grid-column: 1/5;
+        margin-top: 10%;
+
+    }
+
+    #titulo hr {
+        border-top: 1px solid #2b395e;
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+
+    #titulo h2 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    #titulo a {
+        margin-right: 25px;
+        margin-left: 25px;
+        font-size: 20px;
+    }
+
+    .grupo-viajes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .marco {
+        inset: 20px;
+
+    }
+
+    .marco:hover {
+        inset: 30px;
+
+    }
+
+}

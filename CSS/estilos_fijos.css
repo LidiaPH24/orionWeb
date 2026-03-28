@@ -1,0 +1,534 @@
+@font-face {
+    font-family: "SurceSans3-Regular";
+    src:
+        local("SurceSans3-Regular"),
+        url("/TIPO/SourceSans3-Regular.ttf");
+}
+
+#SurceSans3-Regular {
+    font-family: SurceSans3-Regular;
+}
+
+@font-face {
+    font-family: "SurceSans3-Bold";
+    src:
+        local("SurceSans3-Bold"),
+        url("/TIPO/SourceSans3-Bold.ttf");
+}
+
+#SurceSans3-Bold {
+    font-family: SurceSans3-Bold;
+}
+
+@font-face {
+    font-family: "SurceSans3-black";
+    src:
+        local("SurceSans3-black"),
+        url("/TIPO/SourceSans3-Black.ttf");
+}
+
+#SurceSans3-black {
+    font-family: SurceSans3-black;
+}
+
+@font-face {
+    font-family: "Caliste";
+    src:
+        local("Caliste"),
+        url("/TIPO/Caliste.ttf");
+}
+
+
+#Caliste {
+    font-family: Caliste;
+}
+
+h1 {
+    font-family: Caliste;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: Caliste;
+    font-size: 22px;
+}
+
+p {
+    font-family: SurceSans3-Regular;
+    font-size: 11px;
+}
+
+h3 {
+    font-family: SurceSans3-black;
+    font-size: 15px;
+}
+
+h4 {
+    font-family: SurceSans3-Regular;
+    font-size: 20px;
+}
+
+a {
+    font-family: SurceSans3-Regular;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+@media screen and (min-width: 920px) {
+
+    /* tipografias formato ordenador */
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    /* height: 100vh; */
+}
+
+/* la Barra De Navegacion */
+
+.Barra_De_Navegacion {
+    margin-top: 0;
+    font-size: 12px;
+    height: 60px;
+    width: 100%;
+    color: #ffffff;
+    /* background-color: #0e1e407c; */
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0) 100%);
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+}
+
+.Barra_De_Navegacion img {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: auto;
+
+}
+
+#amburgesa {
+    z-index: 2;
+    margin-top: 25%;
+    width: 50%;
+
+}
+
+.menuDesktop {
+    display: none;
+}
+
+.menuDesktop span {
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+    margin: 2px;
+}
+
+#btnMenu {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+#btnMenu:hover {
+    transform: scale(1.05);
+}
+
+#btnMenu span {
+    font-size: 1.6rem;
+    position: relative;
+    top: -2px;
+}
+
+#menu {
+    min-height: 3rem;
+}
+
+.menuDesplegado {
+    background-color: #0E1E40;
+    box-shadow: 2px 1px 15px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    width: 40vw;
+    height: 45vh;
+    z-index: -1;
+
+    position: absolute;
+    left: 300px;
+    right: 0;
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    top: -25px;
+
+    padding: .5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+
+    animation-name: abreCaja;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    transform-origin: top;
+}
+
+
+/* zona de idimoa botom barra de navegacion */
+
+#idioma {
+    display: flex;
+    margin-right: 20px;
+}
+
+#idioma:hover {
+    cursor: pointer;
+}
+
+#iconoIng:hover {
+    color: #FFC05A;
+    transform: scale(1.3);
+}
+
+#iconoEsp:hover {
+    color: #FFC05A;
+    transform: scale(1.3);
+}
+
+.oculta {
+    display: none;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: center;
+}
+
+.Barra_De_Navegacion li {
+    padding-left: 25px;
+    padding-right: 25px;
+    list-style: none;
+}
+
+.Barra_De_Navegacion li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+.Barra_De_Navegacion li a:hover {
+    text-decoration: none;
+    color: #FFC05A;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* ajustes de los botones */
+.boton-normal {
+    width: 100px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 20px;
+
+    background-color: #2b395e;
+    color: #ffffff;
+
+    grid-column: 1/3;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+}
+
+.boton-normal:hover {
+    background-color:
+        #CC9B44;
+}
+
+.boton-amarillo {
+    width: 100px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 20px;
+
+    background-color: #CC9B44;
+    color: #ffffff;
+
+    grid-column: 1/3;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+}
+.boton-amarillo:hover{
+    background-color:  #A8804E;
+}
+
+/* el footer */
+footer{
+    margin-top: 10%;
+    grid-column: 1/3;
+    grid-row-end: auto;
+    background-color: #0E1E40;
+    height: 500px;
+}
+
+footer img {
+    width: 8%;
+}
+
+.politica {
+    padding-top: 15%;
+    padding-bottom: 8%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.politica a {
+    text-decoration: none;
+    color: #FFC05A;
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border-top: 0.2px solid white;
+    width: 85%;
+}
+
+.marca {
+    padding-top: 5%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.marca p {
+    margin-left: 2%;
+    font-size: 15px;
+}
+
+
+.redes {
+    margin-top: 10%;
+    color: #ffffff;
+    text-align: center;
+}
+
+#enlace-redes img {
+    width: 5%;
+    padding: 5px;
+    border: #FFC05A 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+/* boton de subir arriba otra vez */
+
+#subir {
+    width: 40px;
+    justify-self: center;
+    background-color: #2b395e;
+    grid-column: 1/3;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+#subir a {
+    color: white;
+    font-size: 20px;
+}
+
+#subir:hover {
+    background-color:
+        #CC9B44;
+}
+
+@media screen and (min-width: 920px) {
+    #btnMenu {
+        display: none;
+    }
+
+    .movil-cards {
+        display: none;
+    }
+
+    #desplegable {
+        display: none;
+    }
+
+    .menuDesktop {
+        display: flex;
+    }
+
+    .Barra_De_Navegacion {
+        margin-top: 0;
+        font-size: 25px;
+        height: 110px;
+        width: 100%;
+    }
+
+    .Barra_De_Navegacion img {
+        margin-top: 0;
+        margin-left: 10px;
+        height: 100px;
+        width: auto;
+    }
+
+    .Barra_De_Navegacion li {
+        margin-top: 8px;
+
+    }
+
+    .Barra_De_Navegacion li a {
+        font-size: 15px;
+    }
+
+    .boton-normal {
+        grid-column: 1/5;
+        height: auto;
+    }
+
+    .gestor {
+        grid-column: 1/5;
+    }
+
+    main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #subir {
+        margin-top: 0;
+        height: 90%;
+        width: 40px;
+        grid-column: 1/5;
+        justify-self: center;
+    }
+
+}
+
+
+@media screen and (min-width: 920px) {
+    #desplegable {
+        display: none;
+    }
+
+    .menuDesktop {
+        display: flex;
+    }
+
+    footer {
+        margin-top: 5%;
+        height: 600px;
+    }
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    footer img {
+        width: 20%;
+    }
+
+    #bloke {
+        margin: 10%;
+        grid-column: 1/5;
+        color: white;
+    }
+
+    .politica {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 2%;
+        display: flex;
+        align-items: start;
+    }
+
+    .politica a {
+        text-decoration: none;
+        color: #FFC05A;
+        margin-top: 5%;
+        font-size: 12px;
+        margin-right: 4%;
+    }
+
+    #enlace-redes {
+        margin-right: 3%;
+    }
+
+    #enlace-redes img {
+        width: 40px;
+        padding: 10px;
+        margin-top: 0;
+        border: #FFC05A 1px solid;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .redes {
+        margin-top: 0;
+        color: #ffffff;
+        align-items: start;
+        font-size: 20px;
+        display: flex;
+
+    }
+
+    .marca {
+        padding-top: 0;
+        color: #ffffff;
+        display: flex;
+        margin-top: -70px;
+    }
+
+    #correo {
+        display: flex;
+        justify-content: end;
+
+        position: relative;
+        bottom: 65px;
+        right: 220px;
+    }
+
+    #caja-de-contenido {
+        width: 80%;
+        position: relative;
+        top: 20px;
+    }
+
+}
