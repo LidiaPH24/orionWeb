@@ -308,7 +308,7 @@ footer img {
 }
 
 .politica {
-    padding-top: 20%;
+    padding-top: 25%;
     padding-bottom: 8%;
     padding-left: 20%;
     padding-right: 20%;
@@ -318,7 +318,7 @@ footer img {
 }
 
 .politica a {
-    font-size: 10px;
+    font-size: 8px;
     text-decoration: none;
     color: #FFC05A;
     display: flex;
@@ -343,7 +343,6 @@ hr {
     margin-left: 2%;
     font-size: 15px;
 }
-
 
 .redes {
     margin-top: 10%;
