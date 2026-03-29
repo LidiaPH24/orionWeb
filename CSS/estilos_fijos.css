@@ -179,7 +179,7 @@ body {
     position: absolute;
     left: 210px;
     right: 0;
-    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */ 
     top: -25px;
 
     padding: .5rem;
@@ -304,7 +304,7 @@ footer img {
 }
 
 .politica {
-    padding-top: 15%;
+    padding-top: 20%;
     padding-bottom: 8%;
     padding-left: 20%;
     padding-right: 20%;
