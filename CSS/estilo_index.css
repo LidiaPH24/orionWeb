@@ -152,7 +152,7 @@
 .card h3 {
     color: white;
     margin: 0;
-    font-size: 18px;
+    font-size: 12px;
     padding: 20px;
 }
 
@@ -177,7 +177,7 @@
      text-align: center;
     color: white;
 } */
- 
+
 .marco:hover {
   width: 75%;
     height: 75%;

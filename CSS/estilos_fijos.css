@@ -177,7 +177,7 @@ body {
     z-index: -1;
 
     position: absolute;
-    left: 300px;
+    left: 260px;
     right: 0;
     /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
     top: -25px;
