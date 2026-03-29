@@ -266,6 +266,10 @@ main {
     margin: auto;
 }
 
+.boton-normal a{
+     color: #ffffff;
+     text-decoration: none;}
+
 .boton-normal:hover {
     background-color:
         #CC9B44;
@@ -314,6 +318,7 @@ footer img {
 }
 
 .politica a {
+    font-size: 10px;
     text-decoration: none;
     color: #FFC05A;
     display: flex;
