@@ -172,12 +172,12 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 0.5rem;
-    width: 40vw;
+    width: 55vw;
     height: 45vh;
     z-index: -1;
 
     position: absolute;
-    left: 260px;
+    left: 210px;
     right: 0;
     /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
     top: -25px;
