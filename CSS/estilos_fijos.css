@@ -2,7 +2,7 @@
     font-family: "SurceSans3-Regular";
     src:
         local("SurceSans3-Regular"),
-        url("/TIPO/SourceSans3-Regular.ttf");
+        url("../TIPO/SourceSans3-Regular.ttf");
 }
 
 #SurceSans3-Regular {
@@ -13,7 +13,7 @@
     font-family: "SurceSans3-Bold";
     src:
         local("SurceSans3-Bold"),
-        url("/TIPO/SourceSans3-Bold.ttf");
+        url("../TIPO/SourceSans3-Bold.ttf");
 }
 
 #SurceSans3-Bold {
@@ -24,7 +24,7 @@
     font-family: "SurceSans3-black";
     src:
         local("SurceSans3-black"),
-        url("/TIPO/SourceSans3-Black.ttf");
+        url("../TIPO/SourceSans3-Black.ttf");
 }
 
 #SurceSans3-black {
@@ -35,7 +35,7 @@
     font-family: "Caliste";
     src:
         local("Caliste"),
-        url("/TIPO/Caliste.ttf");
+        url("../TIPO/Caliste.ttf");
 }
 
 
