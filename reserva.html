@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
+    <title>Document</title>
 
     <script src="JS/menu.js" defer=""></script>
     <script src="JS/ingles.js" defer=""></script>
-    <script src="JS/carusel-cards.js" defer=""></script>
 
-
+    <script src="JS/reserva.js"></script>
+    <link rel="stylesheet" href="CSS/reserva.css">
     <link rel="stylesheet" href="CSS/estilos_fijos.css">
-    <link rel="stylesheet" href="CSS/estilo_nosotros.css">
 </head>
 
 <body>
+
     <nav class="Barra_De_Navegacion">
         <img src="Img/logo_blanco.png" alt="">
         <section id="desplegable">
@@ -36,6 +36,7 @@
             <li>
                 <a href="informacion.html">Información</a>
             </li>
+
             <li>
                 <a href="viajes.html">Viajes</a>
             </li>
@@ -54,89 +55,39 @@
         </ul>
     </nav>
 
+
+
     <main>
-        <section id="primera-secion">
-            <h2>Fases lunares</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nihil, modi a, ex natus eaque
-                voluptates hic nostrum perspiciatis delectus non blanditiis totam dicta velit aliquid, beatae
-                placeat maxime architecto?</p>
-
-            <img class="movil" src="Img/fases_de_lunas_orizontal.jpg" alt="">
-            <img class="menuDesktop" src="Img/fases-lunares-ordenador.png" alt="">
-
-            <button class="boton-normal">ver mas</button>
-        </section>
-
-        <section class="gestor">
-            <h2>Gestion de Viajes</h2>
-            <p>Viaja connosotros eligiendo que tipo de viaje te conviene mas</p>
-        </section>
-
-        <section class="carrusel">
-
-            <button class="flecha izquierda">&#10094;</button>
-
-            <div class="carrusel-ventana">
-                <div class="carrusel-track">
-
-                    <div class="card">
-                        <img src="Img/personal_1_mobil_ordenador.png">
-                        <h4>Título 1</h4>
-                        <p>Texto breve de la card.</p>
+        
+        <div class="contenedor-reservas">
+            <div class="viaje-card">
+                <img src="Img/viajes-auroravoreal-movil3.png" alt="Viaje astronómico">
+                <div class="info">
+                    <div>
+                        <h2>Viaje a auroras boreales</h2>
+                        <p>Aprende sobre constelaciones, mitología y observación astronómica.</p>
                     </div>
-
-                    <div class="card">
-                        <img src="Img/personal_2_mobil_ordenador.png">
-                        <h4>Título 2</h4>
-                        <p>Texto breve de la card.</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="Img/personal_3_mobil_y_ordenador.png">
-                        <h4>Título 3</h4>
-                        <p>Texto breve de la card.</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="Img/personal_4_mobil_y_ordenador.png">
-                        <h4>Título 4</h4>
-                        <p>Texto breve de la card.</p>
-                    </div>
-
-                    <div class="card">
-                        <img src="Img/personal_5_mobil_y_ordenador.png">
-                        <h4>Título 5</h4>
-                        <p>Texto breve de la card.</p>
-                    </div>
-
+                    <button class="btn-anular" onclick="abrirModal()">Anular</button>
                 </div>
             </div>
+        </div>
 
-            <button class="flecha derecha">&#10095;</button>
+        <div class="modal" id="modalReserva">
+            <div class="modal-contenido">
+                <h3>¿Seguro que deseas anular este viaje?</h3>
+                <p>Esta acción puede afectar tu reserva actual.</p>
 
-        </section>
-
-        <section id="segunda-secion">
-            <section class="partners">
-
-                <h2>Empresas asociadas</h2>
-
-                <div class="logos">
-                    <img src="Img/logo_color.png">
-                    <img src="Img/logo_color.png">
-                    <img src="Img/logo_color.png">
-                    <img src="Img/logo_color.png">
-                    <img src="Img/logo_color.png">
-                    <img src="Img/logo_color.png">
-
+                <div class="modal-botones">
+                    <button onclick="anularReserva()">Sí, anular</button>
+                    <button onclick="cerrarModal()">No, conservar</button>
                 </div>
 
-            </section>
-
-
-        </section>
-
-
+                <div class="contacto-linea">
+                    <span>Si necesitas ayuda, contacta con nuestro equipo.</span>
+                    <button class="btn-contacto">Contacto</button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -212,7 +163,6 @@
         </section>
 
     </footer>
-
 </body>
 
 </html>

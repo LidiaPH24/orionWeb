@@ -1,3 +1,4 @@
+/* CONTENEDOR PRINCIPAL */
 .carrusel {
     grid-column: 1/3;
     position: relative;
@@ -5,48 +6,82 @@
     overflow: hidden;
 }
 
+/* SLIDER */
 .slider {
-    height: 100%;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
+/* SLIDES */
 .slide {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+
     opacity: 0;
-    transition: 0.8;
-}
-
-.slide::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.272);
-    z-index: 0;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    transition: opacity 0.8s ease;
+    z-index: 1;
 }
 
 .slide.activo {
     opacity: 1;
+    z-index: 2;
 }
 
-/* contenido centrado */
+/* overlay oscuro */
+.slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.386);
+    z-index: 1;
+}
 
+/* IMÁGENES */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: transform 8s linear;
+}
+
+.slide.activo img {
+    transform: scale(1.1);
+}
+
+/* CONTENIDO (FIX IMPORTANTE) */
 .contenido {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+
+    /* estado inicial */
+    transform: translate(-50%, -50%) scale(0.95);
     text-align: center;
     color: white;
+    z-index: 5;
+
+    opacity: 0;
+    transition: all 2.0s ease;
 }
 
+/* animación SIN romper el centrado */
+.slide.activo .contenido {
+     transform: translate(-50%, -50%) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+/* estado inicial animación */
+.slide .contenido {
+    transform: translate(-50%, -50%) translateY(20px);
+}
+
+/* BOTÓN */
 .boton-carusel {
     width: 80px;
     display: inline-block;
@@ -58,8 +93,42 @@
     color: white;
 }
 
-/* líneas */
+/* FADE NEGRO (FIX CLAVE) */
+.fade-negro {
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.0s ease;
+  z-index: 1;
+}
 
+.fade-negro.activo {
+  opacity: 1;
+}
+
+/* 
+.fade-negro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+
+    z-index: 1; 
+    transition: opacity 0.5s ease;
+}
+
+.fade-negro.activo {
+    opacity: 1;
+} */
+
+/* LÍNEAS */
 .linea {
     position: absolute;
     width: 1.5px;
@@ -67,6 +136,7 @@
     background: white;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 7;
 }
 
 .arriba {
@@ -77,8 +147,7 @@
     bottom: 20%;
 }
 
-/* puntos */
-
+/* PUNTOS (FIX Z-INDEX) */
 .puntos {
     position: absolute;
     left: 10px;
@@ -87,6 +156,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    z-index: 2; /* 🔥 MÁS ALTO QUE EL FADE */
 }
 
 .punto {

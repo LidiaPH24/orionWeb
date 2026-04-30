@@ -1,31 +1,36 @@
 let segundos = 3;
 let index = 0;
-// const track = document.querySelector('.carrusel-contenedor');
-// const cards = document.querySelectorAll('.carrusel_item');
-// const carousel = document.querySelector('.carrusel');
-
-const slides = document.querySelectorAll(".slide");
-const puntos = document.querySelectorAll(".punto");
-
+const track = document.querySelector('.carrusel-contenedor');
+const cards = document.querySelectorAll('.carrusel_item');
+const carousel = document.querySelector('.carrusel');
 
 let autoplay;
 let isPlaying = true;
 let cardWidth = carousel.offsetWidth;
 
-function mostrarSlide(i) {
-    slides.forEach(s => s.classList.remove("activo"));
-    puntos.forEach(p => p.classList.remove("activo"));
-
-    slides[i].classList.add("activo");
-    puntos[i].classList.add("activo");
+function updateWidth() {
+    cardWidth = carousel.offsetWidth;
+    showSlide(index);
 }
 
-puntos.forEach((p, i) => {
-    p.addEventListener("click", () => {
-        index = i;
-        mostrarSlide(index);
-    });
-});
+function showSlide(i) {
+    index = (i + cards.length) % cards.length;
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
+
+function startAutoplay() {
+    autoplay = setInterval(() => {
+        showSlide(index + 1);
+    }, segundos * 1000);
+    isPlaying = true;
+    playPauseBtn.textContent = "⏸ Pausa";
+}
+
+function stopAutoplay() {
+    clearInterval(autoplay);
+    isPlaying = false;
+    playPauseBtn.textContent = "▶ Play";
+}
 
 document.querySelector('.next').addEventListener('click', () => {
     stopAutoplay();

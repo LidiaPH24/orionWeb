@@ -23,4 +23,4 @@ setInterval(() => {
     index++;
     if (index >= slides.length) index = 0;
     mostrarSlide(index);
-}, 5000);
+}, 10000);
