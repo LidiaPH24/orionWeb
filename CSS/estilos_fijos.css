@@ -46,12 +46,12 @@
 h1 {
     font-family: Caliste;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 h2 {
     font-family: Caliste;
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 p {
@@ -61,18 +61,18 @@ p {
 
 h3 {
     font-family: SurceSans3-black;
-    font-size: 15px;
+    font-size: 0.8em;
 }
 
 h4 {
     font-family: SurceSans3-Regular;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 a {
     font-family: SurceSans3-Regular;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.9em;
 }
 
 
