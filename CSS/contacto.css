@@ -4,12 +4,12 @@
 }
 
 .titulo-contacto {
-    
-height: 20px;
+
+    height: 25px;
     background: #d9d9d9;
     padding: 12px 50px;
     margin-bottom: 20px;
-    
+
 }
 
 .contenedor-contacto {
@@ -95,6 +95,7 @@ button {
     }
 
     .contenedor-contacto {
+         grid-column: 1/5;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
