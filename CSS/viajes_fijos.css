@@ -192,8 +192,8 @@
 }
 
 #titulo a {
-    margin: 10px;
-    color: #2b395e;
+    margin: 2%;
+    color: #5d616a;
 }
 
 #titulo a:hover {
@@ -211,7 +211,7 @@
 .viajes {
     grid-column: 1/3;
     background: #eee;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
