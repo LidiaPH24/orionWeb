@@ -1,0 +1,116 @@
+.contacto {
+    grid-column: 1/3;
+    padding: 30px 20px;
+}
+
+.titulo-contacto {
+    
+height: 20px;
+    background: #d9d9d9;
+    padding: 12px 50px;
+    margin-bottom: 20px;
+    
+}
+
+.contenedor-contacto {
+    background: #d9d9d9;
+    padding: 25px;
+    grid-column: 1/3;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* IZQUIERDA */
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bloque-info {
+    background: #b5b5b5;
+    padding: 25px;
+}
+
+.bloque-info h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.bloque-info p {
+    line-height: 1.5;
+}
+
+/* DERECHA */
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario-contacto label {
+    background: #b5b5b5;
+    padding: 10px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    border: 1px solid #666;
+    background: transparent;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.formulario-contacto textarea {
+    height: 220px;
+    resize: none;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    width: 180px;
+    padding: 15px;
+    border: none;
+    border-radius: 18px;
+    background: #1d2c63;
+    color: white;
+    font-size: 18px;
+}
+
+/* ORDENADOR */
+
+@media (min-width:900px) {
+
+    .contacto {
+        padding: 80px 10%;
+    }
+
+    .contenedor-contacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding: 60px;
+    }
+
+    .bloque-info:first-child {
+        min-height: 280px;
+    }
+
+    .grande {
+        min-height: 500px;
+    }
+
+    .formulario-contacto textarea {
+        height: 350px;
+    }
+
+}
