@@ -62,7 +62,7 @@
     border: 1px solid #666;
     background: transparent;
     padding: 12px;
-    font-size: 16px;
+    font-size: 2em;
 }
 
 .formulario-contacto textarea {
@@ -77,10 +77,10 @@
 }
 
 button {
-    width: 180px;
+    width: 150px;
     padding: 15px;
     border: none;
-    border-radius: 18px;
+    border-radius:100px;
     background: #1d2c63;
     color: white;
     font-size: 18px;
@@ -91,8 +91,20 @@ button {
 @media (min-width:900px) {
 
     .contacto {
+        grid-column: 1/5;
         padding: 80px 10%;
     }
+
+    
+.titulo-contacto {
+
+    height: 70px;
+    background: #d9d9d9;
+    padding: 12px 50px;
+    margin-bottom: 20px;
+
+}
+
 
     .contenedor-contacto {
          grid-column: 1/5;
