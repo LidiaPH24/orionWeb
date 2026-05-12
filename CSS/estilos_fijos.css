@@ -290,6 +290,10 @@ main {
     border: none;
     margin: auto;
 }
+.boton-amarillo a{
+     color: #ffffff;
+     text-decoration: none;}
+
 .boton-amarillo:hover{
     background-color:  #A8804E;
 }
