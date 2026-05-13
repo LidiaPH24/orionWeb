@@ -1,43 +1,36 @@
-.carrusel {
+.portada {
     position: relative;
-    font-family: Arial, sans-serif;
     font-size: 1.5rem;
     grid-column: 1/3;
 
-    border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
     margin: 0 auto;
-    /* box-sizing: content-box; */
     overflow: hidden;
 
     width: 100%;
-    max-width: 900px;
+    height: 400px;
 }
-
-/* Relación de aspecto 16:9 */
-.carrusel::before {
+.portada::before {
     content: "";
     display: block;
     padding-top: 60%;
 }
 
-.carrusel-contenedor {
+.portada-contenedor {
     display: flex;
-    transition: transform 0.8s ease-in-out;
-
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
 }
-.carrusel_item img{ width: 100%;}
+.portada_item img{ width: 100%;}
 
-.carrusel_item {
+.portada_item {
     position: relative;
     margin-right: 0;
     
-    min-width: 100%;
+    width: 100%;
     height: 100%;
 }
 
@@ -54,13 +47,6 @@
     border-radius: 20px;
 }
 
-.carrusel_item::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.388);
-    z-index: 0;
-}
 
 /* líneas */
 
@@ -74,7 +60,7 @@
 }
 
 .arriba {
-    top: 20%;
+    top:20%;
 }
 
 .abajo {
@@ -119,12 +105,17 @@
 
 
 .info {
-    grid-column: 1/4;
-  /* display: grid;
-  grid-template-columns: 2fr 1fr; */
-  gap: 2rem;
+    grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
   padding: 2rem;
   padding-bottom: 0;
+}
+.mapa{
+    grid-column: 2/3;
+    width: 200px;
+
 }
 
 
@@ -134,7 +125,7 @@
 }
 
 .texto {
-    grid-column: 1/3;
+    grid-column: 1/2;
 }
 
 .texto h3 {
@@ -150,35 +141,44 @@
 }
 
 .datos {
-    grid-column: 1/4;
+    grid-column: 1/3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 2rem;
+
+  padding-top: 2rem;
+ padding-bottom: 1rem;
+ padding-right: 2rem;
+ padding-left: 2rem;
 }
 
 .dato {
-  background: #2e2a3b;
+  background: #2B395E;
+
+  font-size: 1.1rem;
   color: white;
-  padding: 1.0rem;
+  padding: 0.5rem;
   text-align: center;
 }
 .cta {
-    grid-column: 1/4;
-  display: flex;
-  justify-content: center;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
 
 }
 
 .cta button {
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
+  font-size: 1.3rem;
   border-radius: 40px;
   border: none;
-  background: #2e2a3b;
+  background: #CC9B44;
   color: white;
   cursor: pointer;
 }
 
+.cta :hover{ 
+    background-color:  #FFC05A;}
 #bloke_timelime{ grid-column: 1/4;
  padding: 2rem;
 }
