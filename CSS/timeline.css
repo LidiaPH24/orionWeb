@@ -1,0 +1,60 @@
+    
+#bloke_timelime{ grid-column: 1/3;
+ padding: 2rem;
+}
+#bloke_timelime .texto{ text-align: center;}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #aaa;
+}
+
+.timeline img{ width: 100%;}
+
+.evento {
+  width: 40%;
+  padding: 1rem;
+  background: #ddd;
+  
+  position: relative;
+}
+
+.card-contenido-timeline{
+  margin: 1rem 0;
+
+}
+
+.izquierda {
+  margin-left: 0;
+}
+
+.derecha {
+  margin-left: 55%;
+}
+
+
+.cabeza-card{ 
+  background-color: #2B395E ;
+}
+
+
+@media (min-width:920px) {
+    
+#bloke_timelime{ grid-column: 1/5;
+ padding: 0rem 4rem 0rem 4rem;
+}
+
+.evento {
+  width: 45%;
+
+}
+
+}
