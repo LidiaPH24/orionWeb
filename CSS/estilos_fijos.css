@@ -179,7 +179,7 @@ body {
     position: absolute;
     left: 210px;
     right: 0;
-    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */ 
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
     top: -25px;
 
     padding: .5rem;
@@ -266,9 +266,10 @@ main {
     margin: auto;
 }
 
-.boton-normal a{
-     color: #ffffff;
-     text-decoration: none;}
+.boton-normal a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .boton-normal:hover {
     background-color:
@@ -290,16 +291,34 @@ main {
     border: none;
     margin: auto;
 }
-.boton-amarillo a{
-     color: #ffffff;
-     text-decoration: none;}
 
-.boton-amarillo:hover{
-    background-color:  #A8804E;
+.boton-amarillo a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
+.boton-amarillo:hover {
+    background-color: #A8804E;
+}
+
+/* Textos de cada apartado */
+.gestor {
+    display: grid;
+    grid-column: 1/3;
+    text-align: center;
+    margin-top: 30px;
+    color: #2b395e;
+    padding: 20px;
+}
+
+.gestor p {
+    margin: 0;
+    margin-top: -10px;
+}
+
+
 /* el footer */
-footer{
+footer {
     margin-top: 10%;
     grid-column: 1/3;
     grid-row-end: auto;
@@ -340,7 +359,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .marca p {
@@ -459,7 +478,6 @@ hr {
     }
 
     footer {
-        /* width: 100%; */
         margin-top: 5%;
         height: 600px;
     }
@@ -476,7 +494,7 @@ hr {
     #bloke {
         width: 80%;
         padding: 10%;
-    margin: 0 auto;
+        margin: 0 auto;
         grid-column: 1/5;
         color: white;
     }

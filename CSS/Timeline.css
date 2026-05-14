@@ -1,0 +1,37 @@
+    
+#bloke_timelime{ grid-column: 1/4;
+ padding: 2rem;
+}
+#bloke_timelime .texto{ text-align: center;}
+
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #aaa;
+}
+
+.timeline img{ width: 100%;}
+.evento {
+  width: 45%;
+  padding: 1rem;
+  background: #ddd;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.izquierda {
+  margin-left: 0;
+}
+
+.derecha {
+  margin-left: 55%;
+}
+

@@ -9,6 +9,7 @@
     background: #d9d9d9;
     padding: 12px 50px;
     margin-bottom: 20px;
+    margin-top: 40px;
 
 }
 
@@ -37,7 +38,6 @@
 
 .bloque-info h2 {
     margin-bottom: 15px;
-    font-size: 18px;
 }
 
 .bloque-info p {
@@ -62,7 +62,7 @@
     border: 1px solid #666;
     background: transparent;
     padding: 12px;
-    font-size: 2em;
+    font-size: 0.8em;
 }
 
 .formulario-contacto textarea {
