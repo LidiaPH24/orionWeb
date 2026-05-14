@@ -60,3 +60,14 @@
 .acordeon-body p {
   margin: 15px 0;
 }
+
+
+@media (min-width:900px) {
+
+  .acordeon {
+  grid-column: 1/5;
+   padding: 0rem 4rem 0rem 4rem;
+  
+}
+
+}
