@@ -366,4 +366,10 @@ padding-top: 4rem;
     }
 
 
+#primera-secion {
+    grid-column: 1/5;
+    padding-top: 60px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
 }

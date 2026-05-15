@@ -1,4 +1,3 @@
-
 /* apartado viajes */
 
 .viajes {
@@ -60,12 +59,14 @@
     width: 80%;
 }
 
-.marco h4:hover{  color: #FFC05A;}
+.marco h4:hover {
+    color: #FFC05A;
+}
 
 
 
 @media (min-width:920px) {
-        .movil {
+    .movil {
         display: none;
     }
 
@@ -90,6 +91,9 @@
         inset: 30px;
 
     }
-    .card h4 { font-size: 1.8rem;}
-    
+
+    .card h4 {
+        font-size: 1.8rem;
+    }
+
 }
