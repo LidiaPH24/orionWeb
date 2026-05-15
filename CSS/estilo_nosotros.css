@@ -1,8 +1,86 @@
+
+/* fuentes retocadas */
+
+h4 {
+    margin-top: 0;
+    font-size: 0.5rem;
+    margin-right: 25px;
+    font-weight: 200;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Imagen ocupa toda la pantalla */
+#cabecera {
+    display: grid;
+    grid-column: 1 / 3;
+    position: relative;
+}
+
+#cabecera img {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+}
+
+/* Caja que va encima */
+.por-encima {
+    grid-row: 1;
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    padding: 20px;
+    text-align: left;
+    color: white;
+}
+
+#fila-redes {
+    margin-top: 0;
+    color: #ffffff;
+    align-items: start;
+    font-size: 10px;
+    display: flex;
+}
+
+#fila-botones .boton-normal {
+    background-color: #0E1E40;
+}
+
+#fila-botones .boton-normal:hover {
+    background-color: #2b395e;
+
+}
+
+.boton-normal {
+    margin-right: 10px;
+}
+
+#fila-enlace-redes img {
+    width: 5%;
+    padding: 5px;
+    border: #FFC05A 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#fila-botones {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+/* secion de informacion */
+
+
 #primera-secion {
     grid-column: 1/3;
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+   padding: 2rem;
 }
 
 #primera-secion img {
@@ -33,7 +111,7 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 20px 20px;
+   margin: 2rem;
 }
 
 .carrusel-ventana {
@@ -71,12 +149,9 @@
 /* 
 zona de los logos */
 
-
 #segunda-secion {
     grid-column: 1/3;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 2rem;
 }
 
 .partners {
@@ -99,9 +174,6 @@ zona de los logos */
 }
 
 @media (min-width:920px) {
-    .movil {
-        display: none;
-    }
 
 
     #primera-secion {
@@ -137,4 +209,58 @@ zona de los logos */
         padding: 5%;
     }
 
+}
+
+
+@media (min-width:920px) {
+ .movil {
+        display: none;
+    }
+    #cabecera {
+        grid-column: 1 / 5;
+
+    }
+
+    h4 {
+    
+    font-size: 0.8rem;
+}
+
+    .por-encima h4 {
+        width: 60%;
+    }
+
+
+    .por-encima {
+        margin-top: -110px;
+        padding: 50px;
+        text-align: left;
+    }
+
+    #fila-enlace-redes img {
+        width: 20px;
+
+    }
+
+    #fila-botones .boton-normal {
+        background-color: #0E1E40;
+        width: 200px;
+        margin-right: 20px;
+    }
+
+    #fila-botones .boton-normal:hover {
+        background-color: #2b395e;
+
+    }
+
+    #fila-botones .boton-amarillo {
+        width: 200px;
+
+    }
+
+    .video-bloke {
+        grid-column: 1/5;
+        display: flex;
+        justify-content: center;
+    }
 }
