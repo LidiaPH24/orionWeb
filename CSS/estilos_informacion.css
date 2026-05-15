@@ -89,7 +89,7 @@ video {
 
 #titulo {
     margin-top: 55px;
-   padding: 2rem;
+   padding: 1.5rem;
     font-size: 18px;
     color: #2b395e;
 
@@ -113,7 +113,7 @@ video {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     align-items: center;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .imagen {
