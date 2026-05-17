@@ -1,7 +1,7 @@
 
 /* fuentes retocadas */
 
-h4 {
+.por-encima h4 {
     margin-top: 0;
     font-size: 0.5rem;
     margin-right: 25px;
@@ -105,6 +105,9 @@ h1 {
 
 
 /* carrusel */
+
+.carrusel h4{ font-size: 1rem;
+    margin: 0.5rem;}
 .carrusel {
     grid-column: 1/3;
     display: flex;
@@ -112,6 +115,7 @@ h1 {
     justify-content: center;
     gap: 20px;
    margin: 20px;
+   margin-bottom: 3rem;
 }
 
 .carrusel-ventana {

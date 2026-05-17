@@ -2,16 +2,18 @@
 <html lang="es">
 
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Móvil</title>
     <script src="JS/menu.js" defer=""></script>
     <script src="JS/ingles.js" defer=""></script>
     <script src="JS/acordeon.js" defer=""></script>
+ <script src="JS/transicion-comparacion.js" defer=""></script>
 
-    
+
     <link rel="stylesheet" href="CSS/viajes_apartados.css">
-    
+    <link rel="stylesheet" href="CSS/transicion-comparadores.css">
+
     <link rel="stylesheet" href="CSS/itinerario.css">
     <link rel="stylesheet" href="CSS/acordeon.css">
     <link rel="stylesheet" href="CSS/viajes_paginas.css">
@@ -135,79 +137,79 @@
 
         <section id="bloke_timelime">
 
-    <div class="gestor">
-        <h2>Itinerario</h2>
-    </div>
-
-    <section class="timeline">
-
-        <div class="evento izquierda">
-
-            <div class="punto"></div>
-
-            <div class="card-timeline">
-
-                <div class="cabeza-card">
-                    <h3>Día 1 - Llegada</h3>
-                </div>
-
-                <div class="contenido-card">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <img src="Img/viajes-acampada-movil6.png">
-
+            <div class="gestor">
+                <h2>Itinerario</h2>
             </div>
-        </div>
 
+            <section class="timeline">
 
-        <div class="evento derecha">
+                <div class="evento izquierda">
 
-            <div class="punto"></div>
+                    <div class="punto"></div>
 
-            <div class="card-timeline">
+                    <div class="card-timeline">
 
-                <div class="cabeza-card">
-                    <h3>Día 2 - Observación</h3>
+                        <div class="cabeza-card">
+                            <h3>Día 1 - Llegada</h3>
+                        </div>
+
+                        <div class="contenido-card">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+
+                        <img src="Img/viajes-acampada-movil6.png">
+
+                    </div>
                 </div>
 
-                <div class="contenido-card">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
+
+                <div class="evento derecha">
+
+                    <div class="punto"></div>
+
+                    <div class="card-timeline">
+
+                        <div class="cabeza-card">
+                            <h3>Día 2 - Observación</h3>
+                        </div>
+
+                        <div class="contenido-card">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+
+                        <img src="Img/viajes-acampada-movil6.png">
+
+                    </div>
                 </div>
 
-                <img src="Img/viajes-acampada-movil6.png">
 
-            </div>
-        </div>
+                <div class="evento izquierda">
 
+                    <div class="punto"></div>
 
-        <div class="evento izquierda">
+                    <div class="card-timeline">
 
-            <div class="punto"></div>
+                        <div class="cabeza-card">
+                            <h3>Día 3 - Excursión</h3>
+                        </div>
 
-            <div class="card-timeline">
+                        <div class="contenido-card">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
 
-                <div class="cabeza-card">
-                    <h3>Día 3 - Excursión</h3>
+                        <img src="Img/viajes-acampada-movil6.png">
+
+                    </div>
                 </div>
 
-                <div class="contenido-card">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                </div>
-
-                <img src="Img/viajes-acampada-movil6.png">
-
-            </div>
-        </div>
-
-    </section>
-</section>
+            </section>
+        </section>
 
 
         <section id="primera-secion">
@@ -231,119 +233,181 @@
             <button class="boton-normal">Ver más</button>
         </section>
 
+        <section id="incluye-viaje">
 
-        <section class="gestor">
-            <h2>Preguntas frecuentes</h2>
-            <p>Viaja con nosotros eligiendo que tipo de viaje te conviene mas</p>
-        </section>
+            <!-- BOTONES -->
 
-        <div class="acordeon">
-            <div class="acordeon-item">
-                <button class="acordeon-header">Sección 1</button>
-                <div class="acordeon-body">
-                    <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita sapiente
-                        mollitia doloremque vel est nisi unde? Itaque atque laudantium magnam, voluptate cupiditate
-                        mollitia cumque tempora sed reprehenderit numquam suscipit?</p>
-                    <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro vel corporis dolores beatae
-                        ipsam blanditiis provident consequuntur? Voluptas repellendus soluta architecto esse tempora
-                        vitae? Quae consequatur aliquid magnam laboriosam deleniti.</p>
+            <div class="tabs-incluye">
+
+                <button class="tab-btn active" data-tab="incluye">
+                    ✓ Incluido
+                </button>
+
+                <button class="tab-btn" data-tab="noincluye">
+                    ✕ No incluido
+                </button>
+
+            </div>
+
+
+
+            <!-- CONTENEDOR -->
+
+            <div class="contenido-tabs">
+
+                <!-- INCLUYE -->
+                <div class="tab-contenido active" id="incluye">
+
+                    <h2>El precio incluye</h2>
+
+                    <ul>
+                        <li>Alojamiento completo</li>
+                        <li>Guía especializado</li>
+                        <li>Excursiones nocturnas</li>
+                        <li>Transporte interno</li>
+                    </ul>
+
+                </div>
+
+                <!-- NO INCLUYE -->
+
+                <div class="tab-contenido" id="noincluye">
+
+                    <h2>El precio no incluye</h2>
+
+                    <ul>
+                        <li>Billete de avión</li>
+                        <li>Comidas y cenas</li>
+                        <li>Seguro opcional</li>
+                        <li>Gastos personales</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            </section>
+
+
+
+            <div class="acordeon">
+                <h2>Preguntas frecuentes</h2>
+                <p>Viaja con nosotros eligiendo que tipo de viaje te conviene mas</p>
+
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 1</button>
+                    <div class="acordeon-body">
+                        <p>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita sapiente
+                            mollitia doloremque vel est nisi unde? Itaque atque laudantium magnam, voluptate cupiditate
+                            mollitia cumque tempora sed reprehenderit numquam suscipit?</p>
+                        <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro vel corporis dolores
+                            beatae
+                            ipsam blanditiis provident consequuntur? Voluptas repellendus soluta architecto esse tempora
+                            vitae? Quae consequatur aliquid magnam laboriosam deleniti.</p>
+                    </div>
+                </div>
+
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 2</button>
+                    <div class="acordeon-body">
+                        <p>2.1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quidem placeat delectus
+                            minus
+                            ratione et aliquid soluta iure neque optio provident harum impedit ipsum fuga ex quo,
+                            accusamus
+                            amet sunt.</p>
+                        <p>2.2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quidem placeat delectus
+                            minus
+                            ratione et aliquid soluta iure neque optio provident harum impedit ipsum fuga ex quo,
+                            accusamus
+                            amet sunt.</p>
+                        <p>2.3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quidem placeat delectus
+                            minus
+                            ratione et aliquid soluta iure neque optio provident harum impedit ipsum fuga ex quo,
+                            accusamus
+                            amet sunt.</p>
+                    </div>
+                </div>
+
+
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 3</button>
+                    <div class="acordeon-body">
+                        <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus obcaecati, dolor
+                            maxime
+                            exercitationem libero deserunt enim alias et, itaque neque, ea quae deleniti asperiores
+                            voluptates ad iusto animi at assumenda?</p>
+                    </div>
+                </div>
+
+                <div class="acordeon-item">
+                    <button class="acordeon-header">Sección 4</button>
+                    <div class="acordeon-body">
+                        <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus obcaecati, dolor
+                            maxime
+                            exercitationem libero deserunt enim alias et, itaque neque, ea quae deleniti asperiores
+                            voluptates ad iusto animi at assumenda?</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="acordeon-item">
-                <button class="acordeon-header">Sección 2</button>
-                <div class="acordeon-body">
-                    <p>2.1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quidem placeat delectus minus
-                        ratione et aliquid soluta iure neque optio provident harum impedit ipsum fuga ex quo, accusamus
-                        amet sunt.</p>
-                    <p>2.2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quidem placeat delectus minus
-                        ratione et aliquid soluta iure neque optio provident harum impedit ipsum fuga ex quo, accusamus
-                        amet sunt.</p>
-                    <p>2.3 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quidem placeat delectus minus
-                        ratione et aliquid soluta iure neque optio provident harum impedit ipsum fuga ex quo, accusamus
-                        amet sunt.</p>
+            <section class="gestor">
+                <h2>Preguntas frecuentes</h2>
+            </section>
+
+
+            <section class="viajes">
+
+
+                <div class="grupo-viajes">
+
+                    <a href="#" class="card">
+                        <img src="Img/viajes-lunaroja-movil1.png">
+                        <div class="marco">
+                            <h4>TRANSILVANEA LUNA DE SANGRE</h4>
+                        </div>
+                    </a>
+
+                    <a href="viajeauroraboreal.html" class="card">
+                        <img src="Img/viajes-auroravoreal-movil3.png">
+                        <div class="marco">
+                            <h4>AHURORA BOREAL EN EL ARTICO</h4>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card">
+                        <img src="Img/viajes-museoastronauta-movil9.png">
+                        <div class="marco">
+                            <h4>EL HUMANO EN EL ESPACIO</h4>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card">
+                        <img src="Img/viajes-pramidedesierto-movil7.png">
+                        <div class="marco">
+                            <h4>LAS ESTRELLAS DE EGIPTO</h4>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card">
+                        <img src="Img/viajes-playaluminiscentesanlorenzo-movil12.png">
+                        <div class="marco">
+                            <h4>LÁGRIMAS DE SAN LORENZO</h4>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card">
+                        <img src="Img/viajes-lunallenablanca-movil10.png">
+                        <div class="marco">
+                            <h4>APRENDIENDO DE LA LUNA</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
+
+            </section>
 
 
-            <div class="acordeon-item">
-                <button class="acordeon-header">Sección 3</button>
-                <div class="acordeon-body">
-                    <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus obcaecati, dolor maxime
-                        exercitationem libero deserunt enim alias et, itaque neque, ea quae deleniti asperiores
-                        voluptates ad iusto animi at assumenda?</p>
-                </div>
-            </div>
-
-            <div class="acordeon-item">
-                <button class="acordeon-header">Sección 4</button>
-                <div class="acordeon-body">
-                    <p>1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus obcaecati, dolor maxime
-                        exercitationem libero deserunt enim alias et, itaque neque, ea quae deleniti asperiores
-                        voluptates ad iusto animi at assumenda?</p>
-                </div>
-            </div>
-        </div>
-
-        <section class="gestor">
-            <h2>Preguntas frecuentes</h2>
-        </section>
-
-
-        <section class="viajes">
-
-
-            <div class="grupo-viajes">
-
-                <a href="#" class="card">
-                    <img src="Img/viajes-lunaroja-movil1.png">
-                    <div class="marco">
-                        <h4>TRANSILVANEA LUNA DE SANGRE</h4>
-                    </div>
-                </a>
-
-                <a href="viajeauroraboreal.html" class="card">
-                    <img src="Img/viajes-auroravoreal-movil3.png">
-                    <div class="marco">
-                        <h4>AHURORA BOREAL EN EL ARTICO</h4>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <img src="Img/viajes-museoastronauta-movil9.png">
-                    <div class="marco">
-                        <h4>EL HUMANO EN EL ESPACIO</h4>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <img src="Img/viajes-pramidedesierto-movil7.png">
-                    <div class="marco">
-                        <h4>LAS ESTRELLAS DE EGIPTO</h4>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <img src="Img/viajes-playaluminiscentesanlorenzo-movil12.png">
-                    <div class="marco">
-                        <h4>LÁGRIMAS DE SAN LORENZO</h4>
-                    </div>
-                </a>
-
-                <a href="#" class="card">
-                    <img src="Img/viajes-lunallenablanca-movil10.png">
-                    <div class="marco">
-                        <h4>APRENDIENDO DE LA LUNA</h4>
-                    </div>
-                </a>
-            </div>
-
-        </section>
-
-
-        <section id="subir">
-            <a href="viajeauroraboreal.html">⌃</a>
-        </section>
+            <section id="subir">
+                <a href="viajeauroraboreal.html">⌃</a>
+            </section>
 
     </main>
 

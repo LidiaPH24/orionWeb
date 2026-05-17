@@ -1,0 +1,123 @@
+#incluye-viaje {
+    grid-column: 1/3;
+    padding: 2rem;
+    background-color: #ececec;
+   
+}
+
+
+/*BOTONES*/
+
+.tabs-incluye {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.2rem;
+    gap: 2rem;
+    background-color: #dcdcdc;
+
+}
+
+
+/* BOTON */
+
+.tab-btn {
+    padding: 1rem 2rem;
+    border: none;
+    background: transparent;
+
+    font-size: 1rem;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+
+    transition: 0.3s;
+}
+
+
+/* ACTIVO */
+
+.tab-btn.active {
+
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+}
+
+
+
+/*CONTENEDOR*/
+
+.contenido-tabs {
+    position: relative;
+   height: 300px;
+}
+
+
+/* PANEL */
+
+.tab-contenido {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    background-color: #dcdcdc;
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+
+    pointer-events: none;
+}
+
+
+/* PANEL ACTIVO */
+
+.tab-contenido.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+
+/*TITULO */
+
+.tab-contenido h2 {
+    margin: 2rem;
+    color: red;
+    font-weight: 300;
+}
+
+
+/*LISTA*/
+
+/* ESTO anula el flex del estilos fijos */
+
+.tab-contenido ul {
+    display: block;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    
+}
+
+/* ITEMS */
+
+.tab-contenido li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+
+@media screen and (min-width: 920px) {
+
+    #incluye-viaje {
+    grid-column: 1/5;
+    padding: 6rem;
+    
+   
+}
+
+}
