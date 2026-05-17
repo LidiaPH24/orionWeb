@@ -1,7 +1,7 @@
 #incluye-viaje {
     grid-column: 1/3;
     padding: 2rem;
-    background-color: #ececec;
+    background-color: #f4f4f4;
    
 }
 
@@ -11,9 +11,9 @@
 .tabs-incluye {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
     gap: 2rem;
-    background-color: #dcdcdc;
+    background-color: #2B395E;
 
 }
 
@@ -24,6 +24,7 @@
     padding: 1rem 2rem;
     border: none;
     background: transparent;
+    color: #dee2e6;
 
     font-size: 1rem;
     cursor: pointer;
@@ -36,10 +37,10 @@
 /* ACTIVO */
 
 .tab-btn.active {
-
-    color: #2563eb;
-    border-bottom: 3px solid #2563eb;
+    color:#FFC05A;
+    border-bottom: 3px solid #FFC05A;
 }
+.tab-btn:hover{color:#FFC05A;}
 
 
 
@@ -47,20 +48,19 @@
 
 .contenido-tabs {
     position: relative;
-   height: 300px;
+   height: 260px;
 }
 
 
 /* PANEL */
 
 .tab-contenido {
-
     position: absolute;
     top: 0;
     left: 0;
 
     width: 100%;
-    background-color: #dcdcdc;
+    background-color: #dee2e6;
     opacity: 0;
 
     transform: translateY(10px);
@@ -82,19 +82,17 @@
 }
 
 
-
 /*TITULO */
 
 .tab-contenido h2 {
     margin: 2rem;
-    color: red;
+    color: #fd0000;
     font-weight: 300;
 }
 
 
 /*LISTA*/
-
-/* ESTO anula el flex del estilos fijos */
+/* Esto anula el flex del estilos fijos */
 
 .tab-contenido ul {
     display: block;
@@ -108,6 +106,7 @@
 .tab-contenido li {
     margin-bottom: 1rem;
     line-height: 1.5;
+    font-size: 0.8rem;
 }
 
 
@@ -115,8 +114,8 @@
 
     #incluye-viaje {
     grid-column: 1/5;
-    padding: 6rem;
-    
+    padding: 3rem 6rem 3rem 6rem;
+    margin-bottom: 4rem;
    
 }
 
