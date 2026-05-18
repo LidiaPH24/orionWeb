@@ -27,7 +27,7 @@
   background:#dee2e6;
   border: 1px solid  white;
   text-align: left;
-  font-size: 16px;
+  font-size: 0.7rem;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -73,4 +73,9 @@
   
 }
 
+.acordeon-header {
+  
+  font-size: 1rem;
+  
+}
 }

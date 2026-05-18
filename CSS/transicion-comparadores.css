@@ -26,7 +26,7 @@
     background: transparent;
     color: #dee2e6;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     cursor: pointer;
     border-bottom: 3px solid transparent;
 
@@ -85,7 +85,7 @@
 /*TITULO */
 
 .tab-contenido h2 {
-    margin: 2rem;
+    margin: 1.5rem;
     color: #fd0000;
     font-weight: 300;
 }
