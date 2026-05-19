@@ -16,7 +16,7 @@
     inset: 0;
     background: rgba(0, 0, 0, 0.221);
     z-index: 1;
-    height: 400px;
+    height: 100%;
 }
 
 .portada-contenedor {
@@ -313,7 +313,7 @@
 
         margin: 0 auto;
         overflow: hidden;
-        height: 500px;
+        height:500px;
     }
 
     .portada-contenedor {
