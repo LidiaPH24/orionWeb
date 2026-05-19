@@ -52,6 +52,7 @@ h1 {
 h2 {
     font-family: Caliste;
     font-size: 1.5em;
+    color: #2b395e;
 }
 
 p {
@@ -75,6 +76,11 @@ a {
     font-size: 0.8em;
 }
 
+h5{ font-family: SurceSans3-Bold;
+     text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
 
 @media screen and (min-width: 920px) {
 

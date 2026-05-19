@@ -45,7 +45,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
     padding: 10px;
     padding: 5px 15px;
     border: 1px solid white;
@@ -53,6 +52,7 @@
     z-index: 2;
 }
 
+.contenido h2{  color: white;}
 /* Líneas */
 
 .linea {
@@ -252,7 +252,8 @@
 }
 
 .cancelacion h2 {
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .tabla {
@@ -263,9 +264,10 @@
 /* Titulos */
 
 .tabla th {
+    font-family: SurceSans3-Regular;
     text-align: left;
     font-size: 0.9rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid #bfc5cc;
 }
 
@@ -278,16 +280,6 @@
 
     border-bottom: 1px solid #d5d9de;
 }
-
-
-/* Quita la ultima linea */
-
-.tabla tr:last-child td {
-    border-bottom: none;
-}
-
-
-/* DESKTOP */
 
 @media (min-width:920px) {
 

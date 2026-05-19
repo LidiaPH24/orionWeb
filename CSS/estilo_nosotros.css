@@ -193,8 +193,8 @@ zona de los logos */
     }
 
     .logos {
-        grid-template-columns: repeat(6, 1fr);
-        padding: 5%;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5%; 
     }
 
 }

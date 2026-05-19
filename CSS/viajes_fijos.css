@@ -62,12 +62,13 @@
     /* estado inicial */
     transform: translate(-50%, -50%) scale(0.95);
     text-align: center;
-    color: white;
     z-index: 5;
 
     opacity: 0;
     transition: all 2.0s ease;
 }
+
+.contenido h2{ color: white;}
 
 /* animación SIN romper el centrado */
 .slide.activo .contenido {
