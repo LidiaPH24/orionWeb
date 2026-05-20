@@ -52,7 +52,9 @@
     z-index: 2;
 }
 
-.contenido h2{  color: white;}
+.contenido h2{ font-size: 2rem;
+     color: white;}
+
 /* Líneas */
 
 .linea {
@@ -206,12 +208,18 @@
     background-color: #FFC05A;
 }
 
+/* Apartado */
 #destacado {
     margin-bottom: 0.5rem;
     padding: 5px 10px 5px 10px;
     background-color: #d9d9d9;
     border-radius: 20px;
 }
+
+#destacado a{ 
+    color: #2B395E;
+    font-size: 0.6rem;}
+   #destacado a:hover{ color: #0E1E40;} 
 
 
 .observaciones {
@@ -290,8 +298,6 @@
     .cancelacion {
         grid-column: span 5;
     }
-
-    .cancelacion h2 {}
 
     .tabla th {
         font-size: 1.2rem;
