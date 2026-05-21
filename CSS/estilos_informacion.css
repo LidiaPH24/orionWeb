@@ -1,6 +1,6 @@
 /* fuentes retocadas */
 
-h4 {
+.por-encima h4 {
     margin-top: 0;
     font-size: 0.5rem;
     margin-right: 25px;
@@ -11,7 +11,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-/* Imagen ocupa toda la pantalla */
+/* Imagen que ocupa toda la pantalla */
 #cabecera {
     display: grid;
     grid-column: 1 / 3;
@@ -39,11 +39,9 @@ h1 {
     color: white;
 }
 
-#fila-redes {
-    margin-top: 0;
-    color: #ffffff;
+.por-encima #fila-redes {
+    width: 70%;
     align-items: start;
-    font-size: 10px;
     display: flex;
 }
 

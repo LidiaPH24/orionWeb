@@ -40,11 +40,9 @@ h1 {
     color: white;
 }
 
-#fila-redes {
-    margin-top: 0;
-    color: #ffffff;
+.por-encima #fila-redes {
+    width: 70%;
     align-items: start;
-    font-size: 10px;
     display: flex;
 }
 

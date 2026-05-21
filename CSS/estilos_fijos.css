@@ -51,6 +51,7 @@ h1 {
 
 h2 {
     font-family: Caliste;
+     font-weight: 100;
     font-size: 1.5em;
     color: #2b395e;
 }
@@ -67,6 +68,7 @@ h3 {
 
 h4 {
     font-family: SurceSans3-Regular;
+       font-weight: 100;
     font-size: 1.2em;
 }
 

@@ -1,4 +1,4 @@
-/* CONTENEDOR PRINCIPAL */
+/* Contenedor principal */
 .carrusel {
     grid-column: 1/3;
     position: relative;
@@ -6,14 +6,14 @@
     overflow: hidden;
 }
 
-/* SLIDER */
+/* Side */
 .slider {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-/* SLIDES */
+/* Slides */
 .slide {
     position: absolute;
     top: 0;
@@ -40,7 +40,7 @@
     z-index: 1;
 }
 
-/* IMÁGENES */
+/* Imagenes*/
 .slide img {
     width: 100%;
     height: 100%;
@@ -53,7 +53,7 @@
     transform: scale(1.1);
 }
 
-/* CONTENIDO (FIX IMPORTANTE) */
+/* Contenido */
 .contenido {
     position: absolute;
     top: 50%;
@@ -70,7 +70,6 @@
 
 .contenido h2{ color: white;}
 
-/* animación SIN romper el centrado */
 .slide.activo .contenido {
      transform: translate(-50%, -50%) scale(1);
     filter: blur(0);
@@ -82,7 +81,7 @@
     transform: translate(-50%, -50%) translateY(20px);
 }
 
-/* BOTÓN */
+/* Boton */
 .boton-carusel {
     width: 80px;
     display: inline-block;
@@ -94,7 +93,7 @@
     color: white;
 }
 
-/* FADE NEGRO (FIX CLAVE) */
+/* Falde negro */
 .fade-negro {
   position: absolute;
   inset: 0;
@@ -109,27 +108,7 @@
   opacity: 1;
 }
 
-/* 
-.fade-negro {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: black;
-    opacity: 0;
-    pointer-events: none;
-
-    z-index: 1; 
-    transition: opacity 0.5s ease;
-}
-
-.fade-negro.activo {
-    opacity: 1;
-} */
-
-/* LÍNEAS */
+/* Lineas */
 .linea {
     position: absolute;
     width: 1.5px;
@@ -148,7 +127,7 @@
     bottom: 20%;
 }
 
-/* PUNTOS (FIX Z-INDEX) */
+/* Puntos */
 .puntos {
     position: absolute;
     left: 10px;
@@ -158,7 +137,7 @@
     flex-direction: column;
     gap: 10px;
 
-    z-index: 2; /* 🔥 MÁS ALTO QUE EL FADE */
+    z-index: 2;
 }
 
 .punto {
