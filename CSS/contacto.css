@@ -23,7 +23,7 @@
     gap: 25px;
 }
 
-/* IZQUIERDA */
+/* Izquierda */
 
 .info-contacto {
     display: flex;
@@ -44,7 +44,7 @@
     line-height: 1.5;
 }
 
-/* DERECHA */
+/* Derecha */
 
 .formulario-contacto {
     display: flex;
@@ -86,7 +86,7 @@ button {
     font-size: 18px;
 }
 
-/* ORDENADOR */
+/* Ordenador */
 
 @media (min-width:900px) {
 

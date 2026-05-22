@@ -14,6 +14,7 @@
 }
 
 /* Slides */
+
 .slide {
     position: absolute;
     top: 0;
@@ -31,7 +32,7 @@
     z-index: 2;
 }
 
-/* overlay oscuro */
+/* capa por encima oscura */
 .slide::before {
     content: "";
     position: absolute;
@@ -109,6 +110,7 @@
 }
 
 /* Lineas */
+
 .linea {
     position: absolute;
     width: 1.5px;
@@ -184,27 +186,11 @@
     color: #CC9B44;
 }
 
-
-/* .overlay {
-    position: absolute;
-    inset: 10px;
-    border: 1px solid orange;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-} */
-
-
-
 footer {
     margin-top: 10px;
 }
 
 @media (min-width:920px) {
-
 
     .carrusel {
         grid-column: 1/5;

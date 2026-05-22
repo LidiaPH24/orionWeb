@@ -86,7 +86,7 @@
 .card {
     position: relative;
     width: 100%;
-    padding-top: 140%; /* 280 / 200 = 1.4 */
+    padding-top: 140%;
 }
 
 .card img {
