@@ -469,7 +469,7 @@
 }
 
 .observaciones li {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 #primera-secion {
@@ -481,7 +481,6 @@
 }
 
 #primera-secion {
-
     grid-column: 1/3;
 
     padding-top: 1rem;
@@ -522,6 +521,7 @@
 .tabla td {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    font-size: 0.8rem;
 
     border-bottom: 1px solid #d5d9de;
 }
