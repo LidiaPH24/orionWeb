@@ -26,25 +26,32 @@
 
         <ul class="menuDesktop">
             <li>
-                <a href="index.html">Inicio</a>
+                <a class="eng" href="index.html">Inicio</a>
+                <a class="cast" href="index.html">Start</a>
             </li>
             <li>
-                <a href="sobrenosotros.html">Quienes somos</a>
+                <a class="eng" href="sobrenosotros.html">Quienes somos</a>
+                <a class="cast" href="sobrenosotros.html">Who we are</a>
             </li>
             <li>
-                <a href="informacion.html">Información</a>
+                <a class="eng" href="informacion.html">Información</a>
+                <a class="cast" href="informacion.html">Information</a>
             </li>
 
             <li>
-                <a href="viajes.html">Viajes</a>
+                <a class="eng" href="viajes.html">Viajes</a>
+                <a class="cast" href="viajes.html">Travels</a>
             </li>
             <li>
-                <a href="reserva.html">Reservas</a>
+                <a class="eng" href="reserva.html">Reservas</a>
+                <a class="cast" href="reserva.html">Reservations</a>
             </li>
 
             <li>
-                <a href="contacto.html">Contacto</a>
+                <a class="eng" href="contacto.html">Contacto</a>
+                <a class="cast" href="contacto.html">Contact</a>
             </li>
+
             <li id="idioma">
                 <span id="iconoIng" class="cast">ESP</span>
                 <span id="iconoEsp" class="eng">ING</span>
@@ -63,12 +70,13 @@
             <img class="menuDesktop" src="Img/imagen_del_inicio_ordenador.png" alt="">
 
             <div class="por-encima">
-                <h1 class="cast"> Conoce el mundo y su historia mirando las estrellas</h1>
-                <h1 class="eng"> Hola paco</h1>
+                <h1 class="eng"> Conoce el mundo y su historia mirando las estrellas</h1>
+                <h1 class="cast"> DISCOVER THE WORLD AND ITS HSTORY BY LOOKING AT THE STARS </h1>
 
                 <form class="busqueda">
                     <input type="text" placeholder="Buscar..." />
-                    <button type="submit">Buscar</button>
+                    <button type="submit" class="eng">Buscar</button>
+                    <button type="submit" class="cast">Search</button>
                 </form>
             </div>
         </section>
@@ -76,66 +84,79 @@
         <!-- gestor de viajes, titulo y class usado para otras seciones de gestion -->
 
         <section class="gestor">
-            <h2>Gestion de Viajes</h2>
-            <p>Viaja con nosotros eligiendo que tipo de viaje te conviene mas</p>
+            <h2 class="eng">Gestion de Viajes</h2>
+            <h2 class="cast">TRAVEL MANAGEMENT</h2>
+            <p class="eng">Viaja con nosotros eligiendo que tipo de viaje te conviene mas</p>
+            <p class="cast">Travel with us by choosing the type of trip that suits you best</p>
         </section>
+
+        <!-- cards de los viajes -->
 
         <section class="cards">
 
             <div class="card">
                 <img src="Img/telescopio_inicio.png" alt="">
                 <a href="viajesmiradores.html">
-                <div class="contenido">
-                    <div class="marco">
-                        <h3>Observaciones con telescopios</h3> 
+                    <div class="contenido">
+                        <div class="marco">
+                            <h3 class="eng">Observaciones con telescopios</h3>
+                            <h3 class="cast">OBSERVATIONS WITH TELESCOPES</h3>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="card">
                 <img src="Img/camping_inicio.png" alt="">
-                  <a href="viajescamping.html">
-                <div class="contenido">
-                    <div class="marco">
-                        <h3>Rutas al alire libre y campings</h3>
+                <a href="viajescamping.html">
+                    <div class="contenido">
+                        <div class="marco">
+                            <h3 class="eng">Rutas al alire libre y campings</h3>
+                            <h3 class="cast"> OUTDOOR ROUTES AND CAMPSITES</h3>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="card">
                 <img src="Img/imagen_del_inicio.png" alt="">
-                 <a href="viajesrepestre.html">
-                <div class="contenido">
-                    <div class="marco">
-                        <h3>Eventos en zonas rupestres</h3>
+                <a href="viajesrepestre.html">
+                    <div class="contenido">
+                        <div class="marco">
+                            <h3 class="eng">Eventos en zonas rupestres</h3>
+                            <h3 class="cast"> EVENTS IN ROCK ART AREAS</h3>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
             <div class="card">
                 <img src="Img/museo_inicio.png" alt="">
-                  <a href="viajesobservatorios.html">
-                <div class="contenido">
-                    <div class="marco">
-                        <h3>Visita giada a observatorios</h3>
+                <a href="viajesobservatorios.html">
+                    <div class="contenido">
+                        <div class="marco">
+                            <h3 class="eng">Visita giada a observatorios</h3>
+                            <h3 class="cast"> GUIDED TOUR OF OBSERVATORIES</h3>
+                        </div>
                     </div>
-                </div>
                 </a>
             </div>
 
-            <button class="boton-normal"><a href="viajes.html">Ver más</a></button>
+            <button class="boton-normal">
+                <a href="viajes.html" class="eng">Ver más</a>
+                <a href="viajes.html" class="cast">See more</a>
+            </button>
 
             <section class="gestor" id="titulo2">
-                <h2>Como funciona</h2>
+                <h2 class="eng">Como funciona</h2>
+                <h2 class="cast">HOW IT WORKS</h2>
             </section>
 
             <div id="informacion-inicio" class="movil-cards">
                 <img src="Img/reserva-movil.png" alt="">
-                <h3>Reserva tu viaje</h3>
-                <p>
+                <h3 class="eng">Reserva tu viaje</h3>
+                <h3 class="cast">Book your trip</h3>
+                <p class="eng">
                     Explora todos nuestros destinos y elige la experiencia que más te inspire. Revisa cuidadosamente la
                     información del viaje, incluyendo vuelos, alojamiento, actividades y precio. Cuando encuentres tu
                     opción ideal, pulsa en “Reservar”, completa los datos de compra y prepárate para vivir una aventura
@@ -144,11 +165,28 @@
                     En la fecha indicada, solo tendrás que presentarte en el lugar acordado que aparece en la
                     descripción del viaje.
                 </p>
+                <p class="cast">
+                    Explore all our destinations and choose the experience that inspires you most. Carefully review the
+                    trip information, including flights, accommodation, activities and price. When you find your idea
+                    option, click "Book," complete the purchase details, and get ready for a unique adventure. On the
+                    scheduled date, simply show up at the agreed-upon location specified in the trip description.
+
+                </p>
             </div>
+
             <div id="informacion-inicio" class="movil-cards">
                 <img src="Img/viaja-movil.png" alt="">
-                <h3>Viaja en grupo</h3>
-                <p>
+                <h3 class="eng">Viaja en grupo</h3>
+                <h3 class="cast">Travel in a group</h3>
+                <p class="eng">
+                    La mayoría de nuestros viajes se realizan en grupo para fomentar la socialización, la seguridad y
+                    una experiencia más enriquecedora para todos los participantes.
+
+                    Todos los viajeros se reunirán en el punto de encuentro indicado junto al instructor asignado en la
+                    descripción del viaje. Siguiendo sus indicaciones, el grupo iniciará el trayecto hasta el destino
+                    seleccionado.
+                </p>
+                <p class="cast">
                     La mayoría de nuestros viajes se realizan en grupo para fomentar la socialización, la seguridad y
                     una experiencia más enriquecedora para todos los participantes.
 
@@ -160,13 +198,20 @@
 
             <div id="informacion-inicio-3" class="movil-cards">
                 <img src="Img/disfruta-movil.png" alt="">
-                <h3>Disfruta la experiencia</h3>
-                <p>
+                <h3 class="eng">Disfruta la experiencia</h3>
+                <h3 class="cast">Enjoy the experience</h3>
+                <p class="eng">
                     Una vez en el destino, permanece junto al grupo y sigue las indicaciones del guía para garantizar
                     una experiencia segura y organizada.
 
                     Disfruta de los paisajes, las vistas y todo el conocimiento que descubrirás durante el viaje. Será
                     el momento perfecto para aprender sobre el entorno, observar el cielo y explorar lugares únicos.
+                </p>
+                <p class="cast">
+                    Once you arrive at your destination, stay with the group and follow the guide's instructions to
+                    ensure a safe and organized experience. Enjoy the scenery, the views, and all the knowledge you'l
+                    discover along the way. It will be the perfect time to learn about the environment, observe the sky,
+                    and explore unique places.
                 </p>
             </div>
 
@@ -175,8 +220,9 @@
 
                 <div id="informacion-inicio">
                     <img src="Img/reserva-ordenador.png" alt="">
-                    <h3>Reserva tu viaje</h3>
-                    <p>
+                    <h3 class="eng">Reserva tu viaje</h3>
+                    <h3 class="cast">Book your trip</h3>
+                    <p class="eng">
                         Explora todos nuestros destinos y elige la experiencia que más te inspire. Revisa cuidadosamente
                         la
                         información del viaje, incluyendo vuelos, alojamiento, actividades y precio. Cuando encuentres
@@ -188,13 +234,36 @@
                         En la fecha indicada, solo tendrás que presentarte en el lugar acordado que aparece en la
                         descripción del viaje.
                     </p>
+                    <p class="cast">
+                        Explore all our destinations and choose the experience that inspires you most. Carefully review
+                        the
+                        trip information, including flights, accommodation, activities and price. When you find your
+                        idea
+                        option, click "Book," complete the purchase details, and get ready for a unique adventure. On
+                        the
+                        scheduled date, simply show up at the agreed-upon location specified in the trip description.
+
+                    </p>
                 </div>
                 <div id="informacion-inicio">
                     <img src="Img/viaja-ordenador.png" alt="">
-                    <h3>Viaja en grupo</h3>
-                    <p>
+                    <h3 class="eng">Viaja en grupo</h3>
+                    <h3 class="cast">Travel in a group</h3>
+                    <p class="eng">
                         La mayoría de nuestros viajes se realizan en grupo para fomentar la socialización, la seguridad
-                        y una experiencia más enriquecedora para todos los participantes.
+                        y
+                        una experiencia más enriquecedora para todos los participantes.
+
+                        Todos los viajeros se reunirán en el punto de encuentro indicado junto al instructor asignado en
+                        la
+                        descripción del viaje. Siguiendo sus indicaciones, el grupo iniciará el trayecto hasta el
+                        destino
+                        seleccionado.
+                    </p>
+                    <p class="cast">
+                        La mayoría de nuestros viajes se realizan en grupo para fomentar la socialización, la seguridad
+                        y
+                        una experiencia más enriquecedora para todos los participantes.
 
                         Todos los viajeros se reunirán en el punto de encuentro indicado junto al instructor asignado en
                         la
@@ -206,8 +275,9 @@
 
                 <div id="informacion-inicio">
                     <img src="Img/disfruta-ordenador.png" alt="">
-                    <h3>Disfruta la experiencia</h3>
-                    <p>
+                    <h3 class="eng">Disfruta la experiencia</h3>
+                    <h3 class="cast">Enjoy the experience</h3>
+                    <p class="eng">
                         Una vez en el destino, permanece junto al grupo y sigue las indicaciones del guía para
                         garantizar
                         una experiencia segura y organizada.
@@ -216,28 +286,45 @@
                         Será
                         el momento perfecto para aprender sobre el entorno, observar el cielo y explorar lugares únicos.
                     </p>
+                    <p class="cast">
+                        Once you arrive at your destination, stay with the group and follow the guide's instructions to
+                        ensure a safe and organized experience. Enjoy the scenery, the views, and all the knowledge
+                        you'l
+                        discover along the way. It will be the perfect time to learn about the environment, observe the
+                        sky,
+                        and explore unique places.
+                    </p>
                 </div>
             </section>
 
-            <button class="boton-normal"><a href="sobrenosotros.html">Ver más</a></button>
+            <button class="boton-normal">
+                <a href="viajes.html" class="eng">Ver más</a>
+                <a href="viajes.html" class="cast">See more</a>
+            </button>
 
             <form class="fornulario-bloj">
-                <h2>No te pierdas las novedades</h2>
-                <p>Suscribete a nuestro bloj</p>
+                <h2 class="eng">No te pierdas las novedades</h2>
+                <h2 class="cast">DON'T MISS THE LATEST NEWS</h2>
+                <p class="eng">Suscribete a nuestro bloj</p>
+                <p class="cast">Subscribe to our blog</p>
                 <section class="rellenar_formulario">
                     <label>
-                        <input type="text" placeholder="Nombre..." />
-                    </label>
-                    <br>
-                    <label>
-                        <input type="text" placeholder="Apellidos..." />
-                    </label>
-                    <br>
-                    <label>
-                        <input type="text" placeholder="Correo..." />
+                        <input type="text" placeholder="Nombre/Name..." />
                     </label>
 
-                    <button class="boton-normal"> <a>Enviar</a></button>
+                    <br>
+                    <label>
+                        <input type="text" placeholder="Apellidos/Surnames..." />
+                    </label>
+                    <br>
+                    <label>
+                        <input type="text" placeholder="Correo/Mail..." />
+                    </label>
+
+                    <button class="boton-normal">
+                        <a href="viajes.html" class="eng">Enviar</a>
+                        <a href="viajes.html" class="cast">See more</a>
+                    </button>
                 </section>
 
             </form>
@@ -259,26 +346,54 @@
                         <img src="Img/redes-sociales-22.png" alt="">
                         <img src="Img/redes-sociales-23.png" alt="">
                     </div>
-                    <h4>Sigenos en nuestras redes sociales</h4>
+                    <h4 class="eng">Sigenos en nuestras redes sociales</h4>
+                    <h4 class="cast">Follow us on our social media channels</h4>
                 </section>
 
-                <p>
+                <p class="eng">
                     Expertos en divulgación astronómica y organización de eventos.
                     <br>
                     Organizamos viajes y eventos a diferentes partes del mundo para aprender de sus fenómenos
                     meteorológicos y culturas astronómicas.
                 </p>
 
+                <p class="cast">
+                    Experts in astronomical outreach and event organization.
+                    <br>
+                    We organize trips and events to different parts of the world to learn about their meteorological
+                    phenomena and astronomical cultures.
+
+                </p>
 
                 <section class="politica">
-                    <a href="https://otea.es/wp-content/uploads/2026/01/guia-reservas-cancelacion.pdf">Politica de
-                        reservas</a>
-                    <a href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">Politica de cookies</a>
-                    <a href="https://blogs.uspceu.com/marketing-y-comunicacion/branding-politico/">Identidad
-                        corporativa</a>
-                    <a
-                        href="https://www.wonder.legal/es/modele/politica-privacidad-sitio-web?msclkid=662e456b143213cbd6422f6898f98828">Politica
-                        de privacidad</a>
+                    <p class="eng"> 
+                        <a href="https://otea.es/wp-content/uploads/2026/01/guia-reservas-cancelacion.pdf">Politica de
+                            reservas</a>
+                    </p>
+                    <p class="eng">
+                        <a href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">Politica de
+                            cookies</a> </p>
+                    <p class="eng">
+                        <a href="https://blogs.uspceu.com/marketing-y-comunicacion/branding-politico/">Identidad
+                            corporativa</a></p>
+                    <p class="eng">
+                        <a href="https://www.wonder.legal/es/modele/politica-privacidad-sitio-web?msclkid=662e456b143213cbd6422f6898f98828">Politica
+                            de privacidad</a>
+                    </p>
+
+                    <p class="cast">
+                        <a href="https://otea.es/wp-content/uploads/2026/01/guia-reservas-cancelacion.pdf">Reservations
+                            policy</a>
+                    </p>
+                    <p class="cast">
+                        <a href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">Cookies
+                            Policy</a></p>
+                    <p class="cast">
+                        <a href="https://blogs.uspceu.com/marketing-y-comunicacion/branding-politico/">Corporate
+                            Identity</a></p>
+                    <p class="cast">
+                        <a href="https://www.wonder.legal/es/modele/politica-privacidad-sitio-web?msclkid=662e456b143213cbd6422f6898f98828">Privacy
+                            Policy</a></p>
                 </section>
             </section>
 
@@ -297,12 +412,26 @@
     <footer id="desplegable">
 
         <section class="politica">
-            <a href="https://otea.es/wp-content/uploads/2026/01/guia-reservas-cancelacion.pdf">Politica de reservas</a>
-            <a href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">Politica de cookies</a>
-            <a href="https://blogs.uspceu.com/marketing-y-comunicacion/branding-politico/">Identidad corporativa</a>
-            <a
-                href="https://www.wonder.legal/es/modele/politica-privacidad-sitio-web?msclkid=662e456b143213cbd6422f6898f98828">Politica
-                de privacidad</a>
+            <p class="eng"> <a href="https://otea.es/wp-content/uploads/2026/01/guia-reservas-cancelacion.pdf">Politica
+                    de reservas</a></p>
+            <p class="eng"><a href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">Politica de
+                    cookies</a> </p>
+            <p class="eng"><a href="https://blogs.uspceu.com/marketing-y-comunicacion/branding-politico/">Identidad
+                    corporativa</a></p>
+            <p class="eng"><a
+                    href="https://www.wonder.legal/es/modele/politica-privacidad-sitio-web?msclkid=662e456b143213cbd6422f6898f98828">Politica
+                    de privacidad</a></p>
+
+            <p class="cast"><a
+                    href="https://otea.es/wp-content/uploads/2026/01/guia-reservas-cancelacion.pdf">Reservations
+                    policy</a></p>
+            <p class="cast"><a href="https://protecciondatos-lopd.com/empresas/politica-de-cookies/">Cookies Policy</a>
+            </p>
+            <p class="cast"><a href="https://blogs.uspceu.com/marketing-y-comunicacion/branding-politico/">Corporate
+                    Identity</a></p>
+            <p class="cast"><a
+                    href="https://www.wonder.legal/es/modele/politica-privacidad-sitio-web?msclkid=662e456b143213cbd6422f6898f98828">Privacy
+                    Policy</a></p>
         </section>
 
         <hr>
@@ -312,7 +441,8 @@
         </section>
 
         <section class="redes">
-            <h4>Sigenos en nuestras redes sociales</h4>
+            <h4 class="eng">Sigenos en nuestras redes sociales</h4>
+            <h4 class="cast">Follow us on our social media channels</h4>
             <div id="enlace-redes">
                 <img src="Img/redes-sociales-20.png" alt="">
                 <img src="Img/redes-sociales-21.png" alt="">

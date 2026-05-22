@@ -90,6 +90,7 @@
 }
 
 .card img {
+    border-radius: 25px;
     position: absolute;
     inset: 0;
     width: 100%;
@@ -117,6 +118,7 @@
      text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-size: 0.7rem;}
+
 .marco {
     position: absolute;
     width: 80%;
@@ -238,6 +240,11 @@
     #informacion-inicio {
         margin: 0;
     }
+
+    
+.card a{ 
+    font-size: 1.2rem;}
+
 
 }
 
