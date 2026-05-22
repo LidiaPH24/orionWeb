@@ -58,6 +58,7 @@
     background: #f4f4f4;
     box-shadow: 0 8px 20px rgba(88, 59, 9, 0.3);
     padding: 30px;
+    margin: 0.5rem;
 
     grid-column: 1/3;
 
