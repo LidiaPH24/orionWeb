@@ -165,14 +165,6 @@
         padding: 0.5rem;
     }
 
-    #apartados a {
-        color: rgba(255, 255, 255, .75);
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        transition: 0.2s;
-    }
-
 }
 
 /* enlaces */
@@ -260,7 +252,7 @@
 .datos {
     display: flex;
     flex-wrap: wrap;
-    gap: .7rem;
+    gap: 0.7rem;
 }
 
 /* cajas */
@@ -275,9 +267,9 @@
 
     text-align: center;
 
-    padding: .8rem;
+    padding: 0.8rem;
 
-    font-size: .9rem;
+    font-size: 0.9rem;
 
     background: white;
 }
