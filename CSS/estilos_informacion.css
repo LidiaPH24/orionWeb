@@ -234,7 +234,8 @@ video {
         font-size: 0.8rem;
     }
 
-    .por-encima h4 {
+   .por-encima h4 {
+        font-size: 1rem;
         width: 60%;
     }
 
